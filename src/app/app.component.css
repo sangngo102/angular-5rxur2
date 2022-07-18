@@ -13,5 +13,10 @@ ol {
   font-size: large;
   background-color: blue;
   stroke-width: 110vw;
-  
+
+}
+hello {
+  color: blueviolet;
+  font: optional;
+  font-size: medium;
 }
