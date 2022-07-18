@@ -19,4 +19,6 @@ hello {
   color: blueviolet;
   font: optional;
   font-size: medium;
+  border-color: blue;
+  border-inline-end-style: inherit;
 }
