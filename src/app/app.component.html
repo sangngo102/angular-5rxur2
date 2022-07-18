@@ -1,22 +1,22 @@
-<p *ngIf = "object.Age >= 23; else under23">{{object.name}}</p>
+<hello *ngIf = "object.age < 18 ; else under18">{{object.name}}</hello>
 
-<ng-template #under23>
+<ng-template #under18>
   <div>
-    <input type="text" [(ngModel)] = 'name'>
+    <label for="">{{object.name}}</label>
   </div>
 </ng-template>
 
-<p>{{object.Age}}</p>
+<label>{{object.name}}</label>
+<br>
+<input type="text" [(ngModel)] = "object.name">
 
-{{name}}
+<button type="button" (click)="handler()">Click me</button>
 <br>
 
-<input [type]="text" value="{{object.name}}">
-<button type="button" (click) ='handle()'>Click me</button>
-<br>
-<input type=" text" [(ngModel)] = 'name'>
-<br>
-<button (click) = "object.Age = object.Age -1">-</button>
-Age: {{object.Age}}
-<button (click) = "object.Age = object.Age +1">+</button>
+<button (click) = "object.age = object.age - 1"> - </button>
+  <input type="text" [value]="object.age">
+<button (click) = "object.age = object.age + 1"> + </button>
 
+<ul>  
+  <ol *ngFor = "let u of users">{{u.name}}-{{u.id}}-{{u.address.zipcode}}- {{u.phone}}</ol>
+</ul>

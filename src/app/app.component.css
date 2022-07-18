@@ -1,3 +1,17 @@
 p {
   font-family: Lato;
+  color: aquamarine;
+  font-size: large;
+}
+span {
+  color: bisque;
+  font-size: large;
+
+}
+ol {
+  color:gold;
+  font-size: large;
+  background-color: blue;
+  stroke-width: 110vw;
+  
 }
